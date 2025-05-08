@@ -110,7 +110,7 @@ begin
 	end
 	
 	# Display results
-	println("📊 Evaluation Results:")
+	println("Evaluation Results:")
 	sort!(results, :Silhouette, rev=true)
 	show(results, allcols=true)
 	
@@ -119,7 +119,7 @@ begin
 	best_method = best_row.Method
 	best_k = best_row.k
 	
-	println("\n🥇 Best method: $best_method with k = $best_k")
+	println("\n Best method: $best_method with k = $best_k")
 	
 	# Recompute best labels
 	labels_best = begin
